@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@theme {
+  --color-prussian: #0A1628;
+  --color-red: #E63946;
+  --color-orange: #F77F00;
+  --color-yellow: #FCBF49;
+  --color-prussian-light: #162240;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Barlow Condensed', sans-serif;
+  --font-big: 'Big Shoulders Display', sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-prussian);
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-red);
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-prussian);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-red);
+}
+
+/* Diagonal utilities */
+.skew-section {
+  transform: skewY(-3deg);
+}
+
+.skew-section > * {
+  transform: skewY(3deg);
+}
+
+.diagonal-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(231, 57, 70, 0.1) 10px,
+    rgba(231, 57, 70, 0.1) 20px
+  );
+}
+
+/* Speed lines animation */
+@keyframes speedLineMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200vw);
+  }
+}
+
+@keyframes speedLineFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  30%, 70% {
+    opacity: 1;
+  }
+}
+
+.speed-line {
+  animation: speedLineMove var(--duration, 3s) linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Velocity blur */
+@keyframes velocityBlur {
+  0% {
+    filter: blur(0px);
+    transform: translateX(0);
+  }
+  50% {
+    filter: blur(2px);
+    transform: translateX(4px);
+  }
+  100% {
+    filter: blur(0px);
+    transform: translateX(0);
+  }
+}
+
+/* Racing stripe gradient */
+.racing-stripe {
+  background: linear-gradient(90deg, var(--color-red) 0%, var(--color-orange) 50%, var(--color-yellow) 100%);
+}
+
+/* Gauge fill gradient */
+.gauge-fill {
+  background: linear-gradient(90deg, var(--color-red), var(--color-orange), var(--color-yellow));
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Role cycle blur */
+@keyframes roleBlur {
+  0% {
+    filter: blur(8px);
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  15% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0);
+  }
+  85% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    filter: blur(8px);
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+}

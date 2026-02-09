@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Sono",
+    "projects": "Progetti",
+    "skills": "Competenze",
+    "experience": "Esperienza",
+    "contact": "Contatti",
+    "portfolio": "Portfolio",
+    "back": "Indietro",
+    "backToHome": "Torna alla Home",
+    "backToPortfolio": "Torna al Portfolio"
+  },
+  "sections": {
+    "about": "Chi Sono",
+    "featuredProjects": "Progetti in Evidenza",
+    "allProjects": "Tutti i Progetti",
+    "skills": "Competenze",
+    "experience": "Esperienza",
+    "education": "Formazione",
+    "contact": "Contatti",
+    "caseStudy": "Case Study"
+  },
+  "caseStudy": {
+    "overview": "Panoramica",
+    "challenge": "La Sfida",
+    "process": "Il Processo",
+    "solution": "La Soluzione",
+    "results": "I Risultati",
+    "testimonial": "Testimonianza",
+    "gallery": "Galleria",
+    "nextProject": "Progetto Successivo",
+    "prevProject": "Progetto Precedente",
+    "viewProject": "Vedi Progetto",
+    "viewAll": "Vedi Tutti i Progetti"
+  },
+  "contact": {
+    "title": "Lavoriamo Insieme",
+    "subtitle": "Hai un progetto in mente? Mi piacerebbe sentirne parlare.",
+    "email": "Scrivimi",
+    "or": "oppure"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati",
+    "madeWith": "Realizzato con",
+    "inRome": "a Roma"
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "English",
+    "switch": "Cambia lingua"
+  },
+  "categories": {
+    "all": "Tutti",
+    "artDirection": "Art Direction",
+    "visualDesign": "Visual Design",
+    "illustration": "Illustrazione",
+    "editorial": "Editoriale",
+    "branding": "Branding",
+    "advertising": "Pubblicità",
+    "socialMedia": "Social Media"
+  },
+  "skillCategories": {
+    "design": "Design",
+    "tools": "Strumenti",
+    "soft": "Competenze Trasversali"
+  },
+  "dates": {
+    "present": "Presente"
+  },
+  "hero": {
+    "scroll": "Scorri per esplorare",
+    "cta": "Vedi i Progetti"
+  }
+}

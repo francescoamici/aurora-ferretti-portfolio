@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --color-raw-white: #F0EDE6;
+  --color-harsh-black: #000000;
+  --color-blue: #0000FF;
+  --color-yellow: #FFD700;
+  --font-display: 'Anton', sans-serif;
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* BRUTAL RESET */
+html {
+  overflow-x: hidden;
+  background-color: #F0EDE6;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #F0EDE6;
+  color: #000000;
+  cursor: crosshair;
+}
+
+::selection {
+  background-color: #0000FF;
+  color: #F0EDE6;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* BRUTAL SCROLLBAR */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0000FF;
+  border: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+}
+
+/* MARQUEE ANIMATION */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 20s linear infinite;
+}
+
+/* BRUTAL LINK STYLE */
+.brutal-link {
+  color: #0000FF;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.brutal-link:hover {
+  background-color: #0000FF;
+  color: #F0EDE6;
+}
+
+/* HARD SHADOW UTILITY */
+.hard-shadow {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.hard-shadow-sm {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.hard-shadow-blue {
+  box-shadow: 8px 8px 0px #0000FF;
+}
+
+/* FLICKER */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-flicker {
+  animation: flicker 1s step-end infinite;
+}

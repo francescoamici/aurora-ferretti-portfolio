@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "backToPortfolio": "Back to Portfolio"
+  },
+  "sections": {
+    "about": "About",
+    "featuredProjects": "Featured Projects",
+    "allProjects": "All Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "caseStudy": "Case Study"
+  },
+  "caseStudy": {
+    "overview": "Overview",
+    "challenge": "The Challenge",
+    "process": "The Process",
+    "solution": "The Solution",
+    "results": "The Results",
+    "testimonial": "Testimonial",
+    "gallery": "Gallery",
+    "nextProject": "Next Project",
+    "prevProject": "Previous Project",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Have a project in mind? I'd love to hear about it.",
+    "email": "Email Me",
+    "or": "or"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "inRome": "in Rome"
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "English",
+    "switch": "Switch language"
+  },
+  "categories": {
+    "all": "All",
+    "artDirection": "Art Direction",
+    "visualDesign": "Visual Design",
+    "illustration": "Illustration",
+    "editorial": "Editorial",
+    "branding": "Branding",
+    "advertising": "Advertising",
+    "socialMedia": "Social Media"
+  },
+  "skillCategories": {
+    "design": "Design",
+    "tools": "Tools",
+    "soft": "Soft Skills"
+  },
+  "dates": {
+    "present": "Present"
+  },
+  "hero": {
+    "scroll": "Scroll to explore",
+    "cta": "View Projects"
+  }
+}

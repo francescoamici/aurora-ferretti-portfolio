@@ -1,0 +1,35 @@
+{
+  "19-40-3": {
+    "title": "19.40.3",
+    "description": "Un progetto di art direction e identità visiva che esplora la relazione tra tempo, spazio e percezione umana.",
+    "categories": "Art Direction, Identità Visiva, Editoriale"
+  },
+  "moby-dick": {
+    "title": "Moby Dick",
+    "description": "Una reinterpretazione visiva del capolavoro di Herman Melville attraverso illustrazioni originali e design editoriale.",
+    "categories": "Illustrazione, Editoriale, Book Design"
+  },
+  "lufthansa": {
+    "title": "Campagna Lufthansa",
+    "description": "Campagna pubblicitaria multicanale che celebra il piacere del viaggio e la connessione tra culture diverse.",
+    "categories": "Pubblicità, Art Direction",
+    "client": "Lufthansa"
+  },
+  "oreo": {
+    "title": "Campagna Oreo",
+    "description": "Strategia di contenuti visual e design per la presenza social media di Oreo nel mercato italiano.",
+    "categories": "Visual Design, Social Media",
+    "client": "Oreo"
+  },
+  "ups": {
+    "title": "Campagna UPS",
+    "description": "Progetto di visual design e branding per la comunicazione corporate di UPS con focus sulla sostenibilità.",
+    "categories": "Visual Design, Branding",
+    "client": "UPS"
+  },
+  "roma-poster-series": {
+    "title": "Roma Poster Series",
+    "description": "Una serie di poster illustrati che celebrano l'architettura, la cultura e l'atmosfera unica di Roma.",
+    "categories": "Illustrazione, Poster, Culturale"
+  }
+}

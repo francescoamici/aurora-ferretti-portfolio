@@ -1,0 +1,29 @@
+{
+  "experience": {
+    "exp1": {
+      "role": "Art Director & Visual Designer",
+      "company": "Arkage",
+      "location": "Roma, Italia",
+      "description": "Direzione artistica e progettazione visiva per campagne pubblicitarie di brand internazionali tra cui Lufthansa, Oreo e UPS. Sviluppo di identità visive, strategie creative e contenuti multicanale."
+    },
+    "exp2": {
+      "role": "Docente di Fondamenti di UX",
+      "company": "Quasar Institute for Advanced Design",
+      "location": "Roma, Italia",
+      "description": "Insegnamento dei fondamenti di User Experience Design, guidando gli studenti attraverso metodologie di ricerca, prototipazione e design thinking."
+    }
+  },
+  "education": {
+    "edu1": {
+      "institution": "Quasar Institute for Advanced Design",
+      "degree": "Graphic & Communication Design",
+      "description": "Formazione specialistica in design grafico e comunicazione visiva, con focus su identità di marca, tipografia e illustrazione."
+    },
+    "edu2": {
+      "institution": "Università degli Studi",
+      "degree": "Master in Economia e Management",
+      "grade": "110/110 cum laude",
+      "description": "Formazione in economia e gestione aziendale con specializzazione in marketing e strategie di comunicazione."
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #F8F4EF;
+  --color-parchment-dark: #EDE6DA;
+  --color-brown: #3D2B1F;
+  --color-brown-light: #5C4033;
+  --color-terracotta: #C75B39;
+  --color-terracotta-light: #D4785E;
+  --color-blue: #1B4965;
+  --color-blue-light: #2A6F97;
+  --font-display: 'Libre Baskerville', serif;
+  --font-subhead: 'Lora', serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-caps: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brown);
+  background-color: var(--color-parchment);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-terracotta);
+  color: var(--color-parchment);
+}
+
+/* Drop Cap Styling */
+.drop-cap::first-letter {
+  font-family: var(--font-display);
+  font-size: 4.5em;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.12em;
+  padding-top: 0.08em;
+  color: var(--color-terracotta);
+  font-weight: 700;
+}
+
+/* Dotted leader lines for TOC */
+.leader-dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-brown);
+  opacity: 0.3;
+  margin: 0 0.75rem;
+  position: relative;
+  top: -0.35rem;
+}
+
+/* Small caps utility */
+.small-caps {
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+}
+
+/* CSS columns for editorial text */
+@media (min-width: 768px) {
+  .editorial-columns {
+    column-count: 2;
+    column-gap: 2.5rem;
+    column-rule: 1px solid rgba(61, 43, 31, 0.15);
+  }
+}
+
+/* Ornamental divider */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.ornament::before,
+.ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-brown);
+  opacity: 0.25;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-parchment);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brown);
+  opacity: 0.3;
+  border-radius: 3px;
+}

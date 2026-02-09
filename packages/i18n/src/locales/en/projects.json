@@ -1,0 +1,35 @@
+{
+  "19-40-3": {
+    "title": "19.40.3",
+    "description": "An art direction and visual identity project exploring the relationship between time, space, and human perception.",
+    "categories": "Art Direction, Visual Identity, Editorial"
+  },
+  "moby-dick": {
+    "title": "Moby Dick",
+    "description": "A visual reinterpretation of Herman Melville's masterpiece through original illustrations and editorial design.",
+    "categories": "Illustration, Editorial, Book Design"
+  },
+  "lufthansa": {
+    "title": "Lufthansa Campaign",
+    "description": "A multichannel advertising campaign celebrating the joy of travel and the connection between diverse cultures.",
+    "categories": "Advertising, Art Direction",
+    "client": "Lufthansa"
+  },
+  "oreo": {
+    "title": "Oreo Campaign",
+    "description": "Visual content strategy and design for Oreo's social media presence in the Italian market.",
+    "categories": "Visual Design, Social Media",
+    "client": "Oreo"
+  },
+  "ups": {
+    "title": "UPS Campaign",
+    "description": "Visual design and branding project for UPS corporate communications focusing on sustainability.",
+    "categories": "Visual Design, Branding",
+    "client": "UPS"
+  },
+  "roma-poster-series": {
+    "title": "Roma Poster Series",
+    "description": "A series of illustrated posters celebrating Rome's architecture, culture, and unique atmosphere.",
+    "categories": "Illustration, Poster, Cultural"
+  }
+}

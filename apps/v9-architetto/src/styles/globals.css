@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-red: #DA291C;
+  --color-gray: #666666;
+  --color-light-gray: #E5E5E5;
+  --color-subtle-gray: #FAFAFA;
+  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+}
+
+/* Reset — zero curves, zero decoration */
+*, *::before, *::after {
+  border-radius: 0 !important;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Swiss Grid Overlay */
+.grid-overlay {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent calc(100% / 12 - 1px),
+      rgba(218, 41, 28, 0.07) calc(100% / 12 - 1px),
+      rgba(218, 41, 28, 0.07) calc(100% / 12)
+    );
+  background-size: 100% 100%;
+}
+
+/* 8px Baseline Grid */
+.baseline-grid {
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 7px,
+      rgba(0, 0, 0, 0.03) 7px,
+      rgba(0, 0, 0, 0.03) 8px
+    );
+}
+
+/* Section header — universal Swiss style */
+.section-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+/* Mono data text */
+.mono-data {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #666666;
+}
+
+/* Swiss Red accent square */
+.red-square {
+  width: 16px;
+  height: 16px;
+  background-color: #DA291C;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.red-square-sm {
+  width: 8px;
+  height: 8px;
+  background-color: #DA291C;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Justified body text */
+.body-justified {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+/* No scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Selection */
+::selection {
+  background-color: #DA291C;
+  color: #FFFFFF;
+}

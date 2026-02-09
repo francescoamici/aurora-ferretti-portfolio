@@ -1,0 +1,27 @@
+{
+  "name": "auror",
+  "private": true,
+  "scripts": {
+    "dev:gateway": "pnpm --filter gateway dev",
+    "dev:v1": "pnpm --filter v1-nero-assoluto dev",
+    "dev:v2": "pnpm --filter v2-carta-bianca dev",
+    "dev:v3": "pnpm --filter v3-brutalismo dev",
+    "dev:v4": "pnpm --filter v4-rinascimento dev",
+    "dev:v5": "pnpm --filter v5-neon-roma dev",
+    "dev:v6": "pnpm --filter v6-giardino-segreto dev",
+    "dev:v7": "pnpm --filter v7-futurismo dev",
+    "dev:v8": "pnpm --filter v8-giocoso dev",
+    "dev:v9": "pnpm --filter v9-architetto dev",
+    "dev:v10": "pnpm --filter v10-cinematica dev",
+    "dev:all": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "build:gateway": "pnpm --filter gateway build",
+    "bundle": "pnpm build && node scripts/bundle.mjs",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r exec rm -rf dist node_modules"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+}
