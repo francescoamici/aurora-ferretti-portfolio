@@ -24,6 +24,11 @@ const themes: Theme[] = [
   { num: 8, name: 'Giocoso', subtitle: 'Playful Memphis', desc: 'Pure joy, geometric confetti', colors: ['#FFB4C8', '#FFE66D', '#4361EE', '#FF6B6B', '#95E1D3'], accent: '#4361EE' },
   { num: 9, name: 'Architetto', subtitle: 'Swiss Grid Design', desc: 'Mathematical precision, pure system', colors: ['#FFFFFF', '#000000', '#DA291C', '#666666'], accent: '#DA291C' },
   { num: 10, name: 'Cinematica', subtitle: 'Cinematic Film', desc: 'Portfolio as a film', colors: ['#0D0D0D', '#F5F0E8', '#8B0000', '#D4A848'], accent: '#D4A848' },
+  { num: 11, name: 'Atelier', subtitle: 'Soft Luxury Editorial', desc: 'Magazine-style elegance, gold accents', colors: ['#FAF7F2', '#E8C4C4', '#2D2D2D', '#C4A265'], accent: '#C4A265' },
+  { num: 12, name: 'Botanica', subtitle: 'Organic & Natural', desc: 'Flowing botanical design, handwritten warmth', colors: ['#FDF6ED', '#7A9B6D', '#C67D4A', '#D4A0A0'], accent: '#7A9B6D' },
+  { num: 13, name: 'Lumière', subtitle: 'Minimalist Light', desc: 'Ultra-clean, airy, exquisite typography', colors: ['#FFFFFF', '#F5F5F5', '#E8E0F0', '#D4A0A0'], accent: '#D4A0A0' },
+  { num: 14, name: 'Maison', subtitle: 'Warm & Sophisticated', desc: 'Rich textures, glassmorphism, warm tones', colors: ['#FFF8F0', '#B8A99A', '#C2693D', '#6B1D2A'], accent: '#C2693D' },
+  { num: 15, name: 'Étoile', subtitle: 'Modern Chic', desc: 'Fashion editorial, bold typography', colors: ['#FAF9F7', '#1A1A1A', '#E8B4B8', '#C9B06B'], accent: '#C9B06B' },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -235,7 +240,7 @@ export default function App() {
           className="mb-12 flex items-center gap-4"
         >
           <h2 className="whitespace-nowrap text-[0.65rem] font-medium uppercase tracking-[0.3em] text-white/30">
-            10 Portfolio Designs
+            15 Portfolio Designs
           </h2>
           <div className="h-px w-full bg-white/[0.06]" />
         </motion.div>

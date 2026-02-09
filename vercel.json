@@ -11,6 +11,11 @@
     { "source": "/v7/(.*)", "destination": "/v7/index.html" },
     { "source": "/v8/(.*)", "destination": "/v8/index.html" },
     { "source": "/v9/(.*)", "destination": "/v9/index.html" },
-    { "source": "/v10/(.*)", "destination": "/v10/index.html" }
+    { "source": "/v10/(.*)", "destination": "/v10/index.html" },
+    { "source": "/v11/(.*)", "destination": "/v11/index.html" },
+    { "source": "/v12/(.*)", "destination": "/v12/index.html" },
+    { "source": "/v13/(.*)", "destination": "/v13/index.html" },
+    { "source": "/v14/(.*)", "destination": "/v14/index.html" },
+    { "source": "/v15/(.*)", "destination": "/v15/index.html" }
   ]
 }

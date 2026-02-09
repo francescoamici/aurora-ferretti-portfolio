@@ -14,11 +14,12 @@ mkdirSync(out, { recursive: true });
 cpSync(resolve(root, 'gateway/dist'), out, { recursive: true });
 
 // Copy each theme into /v{N}/
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 15; i++) {
   const names = [
     '', 'v1-nero-assoluto', 'v2-carta-bianca', 'v3-brutalismo',
     'v4-rinascimento', 'v5-neon-roma', 'v6-giardino-segreto',
     'v7-futurismo', 'v8-giocoso', 'v9-architetto', 'v10-cinematica',
+    'v11-atelier', 'v12-botanica', 'v13-lumiere', 'v14-maison', 'v15-etoile',
   ];
   const src = resolve(root, `apps/${names[i]}/dist`);
   const dest = resolve(out, `v${i}`);
