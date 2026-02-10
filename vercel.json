@@ -1,21 +1,7 @@
 {
-  "buildCommand": "pnpm bundle",
+  "buildCommand": "pnpm build",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/v1/(.*)", "destination": "/v1/index.html" },
-    { "source": "/v2/(.*)", "destination": "/v2/index.html" },
-    { "source": "/v3/(.*)", "destination": "/v3/index.html" },
-    { "source": "/v4/(.*)", "destination": "/v4/index.html" },
-    { "source": "/v5/(.*)", "destination": "/v5/index.html" },
-    { "source": "/v6/(.*)", "destination": "/v6/index.html" },
-    { "source": "/v7/(.*)", "destination": "/v7/index.html" },
-    { "source": "/v8/(.*)", "destination": "/v8/index.html" },
-    { "source": "/v9/(.*)", "destination": "/v9/index.html" },
-    { "source": "/v10/(.*)", "destination": "/v10/index.html" },
-    { "source": "/v11/(.*)", "destination": "/v11/index.html" },
-    { "source": "/v12/(.*)", "destination": "/v12/index.html" },
-    { "source": "/v13/(.*)", "destination": "/v13/index.html" },
-    { "source": "/v14/(.*)", "destination": "/v14/index.html" },
-    { "source": "/v15/(.*)", "destination": "/v15/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

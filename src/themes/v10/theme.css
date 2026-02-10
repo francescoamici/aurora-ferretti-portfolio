@@ -1,0 +1,101 @@
+[data-theme="v10"] {
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Crimson Pro', serif;
+  --font-mono: 'Overpass Mono', monospace;
+
+  font-family: var(--font-body);
+  background-color: var(--color-film-black);
+  color: var(--color-warm-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="v10"] ::selection {
+  background-color: var(--color-gold);
+  color: var(--color-film-black);
+}
+
+/* Scrollbar */
+[data-theme="v10"] ::-webkit-scrollbar {
+  width: 4px;
+}
+
+[data-theme="v10"] ::-webkit-scrollbar-track {
+  background: var(--color-film-black);
+}
+
+[data-theme="v10"] ::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Film grain overlay */
+[data-theme="v10"] .film-grain {
+  position: relative;
+}
+
+[data-theme="v10"] .film-grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Letterbox bars */
+[data-theme="v10"] .letterbox {
+  border-top: clamp(20px, 5vh, 60px) solid #000;
+  border-bottom: clamp(20px, 5vh, 60px) solid #000;
+}
+
+/* Widescreen aspect ratio */
+[data-theme="v10"] .widescreen {
+  aspect-ratio: 2.39 / 1;
+  overflow: hidden;
+}
+
+/* Cinematic fade divider */
+[data-theme="v10"] .scene-divider {
+  background: linear-gradient(
+    to bottom,
+    var(--color-film-black) 0%,
+    #000000 40%,
+    #000000 60%,
+    var(--color-film-black) 100%
+  );
+}
+
+/* Gold rule lines */
+[data-theme="v10"] .gold-rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+/* Spotlight glow */
+[data-theme="v10"] .spotlight {
+  background: radial-gradient(ellipse at center, rgba(212, 168, 72, 0.06) 0%, transparent 70%);
+}
+
+/* Drop cap */
+[data-theme="v10"] .drop-cap::first-letter {
+  font-family: 'Cinzel', serif;
+  color: var(--color-gold);
+  float: left;
+  font-size: 4em;
+  line-height: 0.8;
+  padding-right: 0.1em;
+  margin-top: 0.05em;
+  font-weight: 600;
+}
+
+/* Leader dots for credits */
+[data-theme="v10"] .leader-dots {
+  flex: 1;
+  border-bottom: 1px dotted rgba(212, 168, 72, 0.3);
+  margin: 0 0.75rem;
+  min-width: 2rem;
+  align-self: flex-end;
+  margin-bottom: 0.35em;
+}

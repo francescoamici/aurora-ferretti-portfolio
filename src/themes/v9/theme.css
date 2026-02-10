@@ -1,0 +1,99 @@
+[data-theme="v9"] {
+  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Zero curves */
+[data-theme="v9"] *, [data-theme="v9"] *::before, [data-theme="v9"] *::after {
+  border-radius: 0 !important;
+}
+
+[data-theme="v9"] ::selection {
+  background-color: #DA291C;
+  color: #FFFFFF;
+}
+
+/* Swiss Grid Overlay */
+[data-theme="v9"] .grid-overlay {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent calc(100% / 12 - 1px),
+      rgba(218, 41, 28, 0.07) calc(100% / 12 - 1px),
+      rgba(218, 41, 28, 0.07) calc(100% / 12)
+    );
+  background-size: 100% 100%;
+}
+
+/* 8px Baseline Grid */
+[data-theme="v9"] .baseline-grid {
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 7px,
+      rgba(0, 0, 0, 0.03) 7px,
+      rgba(0, 0, 0, 0.03) 8px
+    );
+}
+
+/* Section header */
+[data-theme="v9"] .section-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+/* Mono data text */
+[data-theme="v9"] .mono-data {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #666666;
+}
+
+/* Swiss Red accent square */
+[data-theme="v9"] .red-square {
+  width: 16px;
+  height: 16px;
+  background-color: #DA291C;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+[data-theme="v9"] .red-square-sm {
+  width: 8px;
+  height: 8px;
+  background-color: #DA291C;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Justified body text */
+[data-theme="v9"] .body-justified {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+/* Scrollbar */
+[data-theme="v9"] ::-webkit-scrollbar {
+  width: 4px;
+}
+[data-theme="v9"] ::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+[data-theme="v9"] ::-webkit-scrollbar-thumb {
+  background: #000000;
+}

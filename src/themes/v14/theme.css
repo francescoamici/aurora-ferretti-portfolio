@@ -1,0 +1,53 @@
+[data-theme="v14"] {
+  --font-display: 'Noto Serif Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  --font-accent: 'Libre Baskerville', serif;
+
+  font-family: var(--font-body);
+  background-color: #FFF8F0;
+  color: #3D2B1F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+[data-theme="v14"] ::selection {
+  background-color: #C2693D40;
+  color: #3D2B1F;
+}
+
+[data-theme="v14"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-theme="v14"] ::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+
+[data-theme="v14"] ::-webkit-scrollbar-thumb {
+  background: #B8A99A60;
+  border-radius: 3px;
+}
+
+[data-theme="v14"] ::-webkit-scrollbar-thumb:hover {
+  background: #B8A99A90;
+}
+
+/* Warm glassmorphism utility */
+[data-theme="v14"] .glass-warm {
+  background: rgba(255, 248, 240, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(184, 169, 154, 0.2);
+}
+
+/* Warm shadow utility */
+[data-theme="v14"] .shadow-warm {
+  box-shadow: 0 4px 24px -4px rgba(61, 43, 31, 0.08),
+              0 2px 8px -2px rgba(184, 150, 62, 0.06);
+}
+
+[data-theme="v14"] .shadow-warm-lg {
+  box-shadow: 0 8px 40px -8px rgba(61, 43, 31, 0.12),
+              0 4px 16px -4px rgba(184, 150, 62, 0.08);
+}

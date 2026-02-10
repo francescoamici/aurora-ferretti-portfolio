@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  /* ===== v1: Nero Assoluto ===== */
+  --color-nero: #0A0A0A;
+  --color-ivory: #F5F0E8;
+  --color-gold: #C9A96E;
+  --color-wine: #6B1D2A;
+
+  /* ===== v2: Carta Bianca ===== */
+  /* --color-white and --color-black are Tailwind defaults */
+  --color-red: #E63946;
+
+  /* ===== v3: Brutalismo ===== */
+  --color-raw-white: #F0EDE6;
+  --color-harsh-black: #000000;
+  --color-blue: #0000FF;
+  --color-yellow: #FFD700;
+
+  /* ===== v4: Rinascimento ===== */
+  --color-parchment: #F8F4EF;
+  --color-parchment-dark: #EDE6DA;
+  --color-brown: #3D2B1F;
+  --color-brown-light: #5C4033;
+  --color-terracotta: #C75B39;
+  --color-terracotta-light: #D4785E;
+  --color-blue-light: #2A6F97;
+
+  /* ===== v5: Neon Roma ===== */
+  --color-space: #0B0B1A;
+  --color-space-light: #151530;
+  --color-cyan: #00F0FF;
+  --color-magenta: #FF00E5;
+  --color-green: #39FF14;
+  --color-cyan-dim: #00F0FF33;
+  --color-magenta-dim: #FF00E533;
+  --color-green-dim: #39FF1433;
+
+  /* ===== v6: Giardino Segreto ===== */
+  --color-cream: #FDF8F0;
+  --color-cream-dark: #F5EDE0;
+  --color-cream-light: #FFFCF7;
+  --color-forest: #2D5016;
+  --color-forest-light: #2D501620;
+  --color-forest-medium: #3A6B1E;
+  --color-terra: #C67D4A;
+  --color-terra-light: #C67D4A20;
+  --color-rose: #C4798B;
+  --color-rose-light: #C4798B20;
+  --color-bark: #5C4033;
+
+  /* ===== v7: Futurismo ===== */
+  --color-prussian: #0A1628;
+  --color-orange: #F77F00;
+  --color-prussian-light: #162240;
+
+  /* ===== v8: Giocoso ===== */
+  --color-pink: #FFB4C8;
+  --color-coral: #FF6B6B;
+  --color-mint: #95E1D3;
+  --color-dark: #1A1A2E;
+
+  /* ===== v9: Architetto ===== */
+  --color-gray: #666666;
+  --color-light-gray: #E5E5E5;
+  --color-subtle-gray: #FAFAFA;
+
+  /* ===== v10: Cinematica ===== */
+  --color-film-black: #0D0D0D;
+  --color-warm-white: #F5F0E8;
+  --color-directors-red: #8B0000;
+  --color-film-gray: #1A1A1A;
+
+  /* ===== v11: Atelier ===== */
+  --color-charcoal: #2D2D2D;
+  --color-charcoal-light: #4A4A4A;
+  --color-blush: #E8C4C4;
+  --color-blush-deep: #D4A0A0;
+  --color-blush-light: #F5E1E1;
+  --color-gold-light: #D4B885;
+  --color-gold-dim: #C4A26530;
+
+  /* ===== v12: Botanica ===== */
+  --color-sage: #7A9B6D;
+  --color-sage-light: #7A9B6D20;
+  --color-sage-medium: #8FAF82;
+  --color-olive: #A8B89A;
+  --color-olive-light: #A8B89A30;
+  --color-earth: #6B5B4E;
+  --color-earth-light: #6B5B4E15;
+  --color-petal: #D4A0A0;
+  --color-petal-light: #D4A0A020;
+
+  /* ===== v13: Lumiere ===== */
+  --color-snow: #FAFAFA;
+  --color-mist: #F5F5F5;
+  --color-silver: #E8E8E8;
+  --color-dove: #CCCCCC;
+  --color-lavender: #E8E0F0;
+  --color-lavender-deep: #C8B8D8;
+  --color-rose-light-v13: #E8C4C4;
+
+  /* ===== v14: Maison ===== */
+  --color-taupe: #B8A99A;
+  --color-taupe-light: #B8A99A25;
+  --color-sienna: #C2693D;
+  --color-sienna-light: #C2693D20;
+  --color-burgundy: #6B1D2A;
+  --color-burgundy-light: #6B1D2A15;
+  --color-espresso: #3D2B1F;
+  --color-espresso-light: #3D2B1F80;
+
+  /* ===== v15: Etoile ===== */
+  --color-noir: #1A1A1A;
+  --color-noir-light: #2A2A2A;
+  --color-blush-etoile: #E8B4B8;
+  --color-blush-etoile-light: #E8B4B825;
+  --color-blush-etoile-deep: #D4949A;
+  --color-gray-light: #CCCCCC;
+
+  /* ===== Shared/default font variables (overridden per theme) ===== */
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: monospace;
+  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-heading: sans-serif;
+  --font-subhead: serif;
+  --font-caps: sans-serif;
+  --font-hand: cursive;
+  --font-fun: cursive;
+  --font-accent: serif;
+  --font-big: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

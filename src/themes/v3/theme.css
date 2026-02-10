@@ -1,0 +1,93 @@
+[data-theme="v3"] {
+  --font-display: 'Anton', sans-serif;
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #F0EDE6;
+  color: #000000;
+  cursor: crosshair;
+  overflow-x: hidden;
+}
+
+[data-theme="v3"] ::selection {
+  background-color: #0000FF;
+  color: #F0EDE6;
+}
+
+[data-theme="v3"] a {
+  cursor: pointer;
+}
+
+/* BRUTAL SCROLLBAR */
+[data-theme="v3"] ::-webkit-scrollbar {
+  width: 12px;
+}
+
+[data-theme="v3"] ::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+[data-theme="v3"] ::-webkit-scrollbar-thumb {
+  background: #0000FF;
+  border: 2px solid #000000;
+}
+
+[data-theme="v3"] ::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+}
+
+/* MARQUEE ANIMATION */
+@keyframes v3-marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes v3-marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+[data-theme="v3"] .animate-marquee-left {
+  animation: v3-marquee-left 20s linear infinite;
+}
+
+[data-theme="v3"] .animate-marquee-right {
+  animation: v3-marquee-right 20s linear infinite;
+}
+
+/* BRUTAL LINK STYLE */
+[data-theme="v3"] .brutal-link {
+  color: #0000FF;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+[data-theme="v3"] .brutal-link:hover {
+  background-color: #0000FF;
+  color: #F0EDE6;
+}
+
+/* HARD SHADOW UTILITY */
+[data-theme="v3"] .hard-shadow {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+[data-theme="v3"] .hard-shadow-sm {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+[data-theme="v3"] .hard-shadow-blue {
+  box-shadow: 8px 8px 0px #0000FF;
+}
+
+/* FLICKER */
+@keyframes v3-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+[data-theme="v3"] .animate-flicker {
+  animation: v3-flicker 1s step-end infinite;
+}

@@ -1,29 +1,29 @@
 {
   "name": "auror",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev:gateway": "pnpm --filter gateway dev",
-    "dev:v1": "pnpm --filter v1-nero-assoluto dev",
-    "dev:v2": "pnpm --filter v2-carta-bianca dev",
-    "dev:v3": "pnpm --filter v3-brutalismo dev",
-    "dev:v4": "pnpm --filter v4-rinascimento dev",
-    "dev:v5": "pnpm --filter v5-neon-roma dev",
-    "dev:v6": "pnpm --filter v6-giardino-segreto dev",
-    "dev:v7": "pnpm --filter v7-futurismo dev",
-    "dev:v8": "pnpm --filter v8-giocoso dev",
-    "dev:v9": "pnpm --filter v9-architetto dev",
-    "dev:v10": "pnpm --filter v10-cinematica dev",
-    "dev:v11": "pnpm --filter v11-atelier dev",
-    "dev:v12": "pnpm --filter v12-botanica dev",
-    "dev:v13": "pnpm --filter v13-lumiere dev",
-    "dev:v14": "pnpm --filter v14-maison dev",
-    "dev:v15": "pnpm --filter v15-etoile dev",
-    "dev:all": "pnpm -r --parallel dev",
-    "build": "pnpm -r build",
-    "build:gateway": "pnpm --filter gateway build",
-    "bundle": "pnpm build && node scripts/bundle.mjs",
-    "lint": "pnpm -r lint",
-    "clean": "pnpm -r exec rm -rf dist node_modules"
+    "dev": "vite --port 5173",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.0",
+    "framer-motion": "^11.15.0",
+    "i18next": "^24.2.0",
+    "react-i18next": "^15.4.0",
+    "i18next-browser-languagedetector": "^8.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0"
   },
   "engines": {
     "node": ">=18",

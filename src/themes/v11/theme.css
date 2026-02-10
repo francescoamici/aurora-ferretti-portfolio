@@ -1,0 +1,34 @@
+[data-theme="v11"] {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --font-accent: 'Cormorant', serif;
+
+  font-family: var(--font-body);
+  background-color: #FAF7F2;
+  color: #2D2D2D;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+[data-theme="v11"] ::selection {
+  background-color: #E8C4C480;
+  color: #2D2D2D;
+}
+
+[data-theme="v11"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-theme="v11"] ::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+[data-theme="v11"] ::-webkit-scrollbar-thumb {
+  background: #C4A26540;
+  border-radius: 3px;
+}
+
+[data-theme="v11"] ::-webkit-scrollbar-thumb:hover {
+  background: #C4A26580;
+}

@@ -1,0 +1,33 @@
+[data-theme="v13"] {
+  --font-display: 'Sorts Mill Goudy', serif;
+  --font-body: 'Karla', sans-serif;
+  --font-accent: 'Spectral', serif;
+
+  font-family: var(--font-body);
+  background-color: #FFFFFF;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+[data-theme="v13"] ::selection {
+  background-color: #E8E0F0;
+  color: #333333;
+}
+
+[data-theme="v13"] ::-webkit-scrollbar {
+  width: 4px;
+}
+
+[data-theme="v13"] ::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+[data-theme="v13"] ::-webkit-scrollbar-thumb {
+  background: #E8E8E8;
+  border-radius: 2px;
+}
+
+[data-theme="v13"] ::-webkit-scrollbar-thumb:hover {
+  background: #CCCCCC;
+}

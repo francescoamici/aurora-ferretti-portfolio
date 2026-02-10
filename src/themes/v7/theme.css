@@ -1,0 +1,86 @@
+[data-theme="v7"] {
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Barlow Condensed', sans-serif;
+  --font-big: 'Big Shoulders Display', sans-serif;
+
+  font-family: var(--font-body);
+  background-color: var(--color-prussian);
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+[data-theme="v7"] ::selection {
+  background-color: var(--color-red);
+  color: #fff;
+}
+
+/* Scrollbar */
+[data-theme="v7"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-theme="v7"] ::-webkit-scrollbar-track {
+  background: var(--color-prussian);
+}
+
+[data-theme="v7"] ::-webkit-scrollbar-thumb {
+  background: var(--color-red);
+}
+
+/* Diagonal utilities */
+[data-theme="v7"] .skew-section {
+  transform: skewY(-3deg);
+}
+
+[data-theme="v7"] .skew-section > * {
+  transform: skewY(3deg);
+}
+
+[data-theme="v7"] .diagonal-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(231, 57, 70, 0.1) 10px,
+    rgba(231, 57, 70, 0.1) 20px
+  );
+}
+
+/* Speed lines animation */
+@keyframes v7-speedLineMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200vw); }
+}
+
+[data-theme="v7"] .speed-line {
+  animation: v7-speedLineMove var(--duration, 3s) linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Racing stripe gradient */
+[data-theme="v7"] .racing-stripe {
+  background: linear-gradient(90deg, var(--color-red) 0%, var(--color-orange) 50%, var(--color-yellow) 100%);
+}
+
+/* Gauge fill gradient */
+[data-theme="v7"] .gauge-fill {
+  background: linear-gradient(90deg, var(--color-red), var(--color-orange), var(--color-yellow));
+}
+
+/* Marquee animation */
+@keyframes v7-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+[data-theme="v7"] .animate-marquee {
+  animation: v7-marquee 20s linear infinite;
+}
+
+/* Role cycle blur */
+@keyframes v7-roleBlur {
+  0% { filter: blur(8px); opacity: 0; transform: translateX(30px); }
+  15% { filter: blur(0px); opacity: 1; transform: translateX(0); }
+  85% { filter: blur(0px); opacity: 1; transform: translateX(0); }
+  100% { filter: blur(8px); opacity: 0; transform: translateX(-30px); }
+}
