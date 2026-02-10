@@ -44,6 +44,24 @@ export default function About() {
   return (
     <section id="about" ref={ref} className="relative py-32 px-6">
       <div className="max-w-4xl mx-auto">
+        {/* Portrait with neon glow */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8 }}
+          className="mb-8 flex justify-center"
+        >
+          <div className="relative w-44 h-44 md:w-52 md:h-52">
+            <div className="absolute inset-0 rounded-full blur-xl" style={{ background: 'radial-gradient(circle, rgba(0,240,255,0.15) 0%, rgba(255,0,229,0.1) 50%, transparent 70%)' }} />
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="relative w-full h-full object-cover object-top brightness-110"
+              style={{ filter: 'brightness(1.1) drop-shadow(0 0 12px rgba(0,240,255,0.3))' }}
+            />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

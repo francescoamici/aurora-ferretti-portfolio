@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from '@auror/i18n';
+import { profile } from '@auror/data';
 
 export default function About() {
   const { t } = useTranslation('profile');
@@ -15,10 +16,19 @@ export default function About() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3 }}
-              className="flex items-center gap-[12px] md:sticky md:top-[96px]"
+              className="md:sticky md:top-[96px]"
             >
-              <span className="red-square" />
-              <span className="section-label">About</span>
+              <div className="flex items-center gap-[12px] mb-[24px]">
+                <span className="red-square" />
+                <span className="section-label">About</span>
+              </div>
+              <div className="w-[160px] h-[200px] relative overflow-hidden">
+                <img
+                  src={profile.portraitCutout}
+                  alt={profile.name}
+                  className="w-full h-full object-cover object-top grayscale"
+                />
+              </div>
             </motion.div>
           </div>
 

@@ -41,6 +41,25 @@ export default function About() {
         </motion.h2>
       </div>
 
+      {/* PORTRAIT BLOCK */}
+      <div className="relative px-4 md:px-8 py-8 md:py-0">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.1 }}
+          viewport={{ once: true }}
+          className="w-48 md:w-64 mx-auto md:mx-0 md:ml-8"
+        >
+          <div className="border-[4px] border-harsh-black bg-yellow hard-shadow p-0 overflow-hidden">
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="w-full h-auto object-cover grayscale contrast-125"
+            />
+          </div>
+        </motion.div>
+      </div>
+
       {/* BROKEN GRID BIO */}
       <div className="relative px-4 md:px-8 py-8 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-0">

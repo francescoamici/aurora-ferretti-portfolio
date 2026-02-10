@@ -92,25 +92,16 @@ export default function About() {
             transition={{ type: 'spring', stiffness: 120 }}
           >
             <div
-              className="aspect-square rounded-3xl flex items-center justify-center relative overflow-hidden"
+              className="aspect-square rounded-3xl relative overflow-hidden"
               style={{
                 border: '6px solid #4361EE',
-                background: 'linear-gradient(135deg, #FFB4C8, #FFE66D, #95E1D3)',
               }}
             >
-              {/* Squiggly inner border */}
-              <div
-                className="absolute inset-3 rounded-2xl"
-                style={{ border: '4px dashed #FF6B6B' }}
+              <img
+                src={profile.avatar}
+                alt={profile.name}
+                className="absolute inset-0 w-full h-full object-cover object-top"
               />
-              <div className="text-center z-10">
-                <span className="font-display text-6xl md:text-8xl text-white drop-shadow-lg">
-                  AF
-                </span>
-                <p className="font-fun text-white text-lg mt-2 drop-shadow-md">
-                  {profile.location}
-                </p>
-              </div>
 
               {/* Decorative shapes inside */}
               <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/30" />

@@ -106,6 +106,18 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="lg:col-span-2"
           >
+            {/* Portrait */}
+            <div className="mb-6 flex justify-center">
+              <div className="w-full relative overflow-hidden rounded-2xl">
+                <img
+                  src={profile.portraitCutout}
+                  alt={profile.name}
+                  className="w-full h-auto object-cover object-top"
+                  style={{ filter: 'sepia(0.15)' }}
+                />
+              </div>
+            </div>
+
             <div className="glass-warm rounded-2xl p-8 shadow-warm relative overflow-hidden">
               {/* Decorative gradient overlay */}
               <div

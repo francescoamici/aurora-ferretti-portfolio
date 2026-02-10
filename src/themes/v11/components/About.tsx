@@ -75,7 +75,24 @@ export default function About() {
 
           {/* Main content */}
           <div className="lg:col-span-8">
-            {/* Pull quote */}
+            {/* Portrait */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+              className="mb-12"
+            >
+              <div className="w-40 h-48 md:w-48 md:h-56 relative overflow-hidden rounded-sm">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cream/10" />
+                <img
+                  src={profile.portraitCutout}
+                  alt={profile.name}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </motion.div>
+
+          {/* Pull quote */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}

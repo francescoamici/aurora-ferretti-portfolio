@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from '@auror/i18n';
+import { profile } from '@auror/data';
 import OrnamentalDivider from './OrnamentalDivider';
 
 export default function About() {
@@ -43,6 +44,24 @@ export default function About() {
           <h2 className="font-caps text-[0.7rem] tracking-[0.3em] uppercase text-brown/50 small-caps">
             {sectionHeader}
           </h2>
+        </motion.div>
+
+        {/* Portrait */}
+        <motion.div
+          variants={fadeUp}
+          custom={0.15}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }}
+          className="flex justify-center mb-16"
+        >
+          <div className="w-44 h-56 relative overflow-hidden" style={{ border: '1px solid rgba(139,90,43,0.2)' }}>
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="w-full h-full object-cover object-top sepia-[0.3]"
+            />
+          </div>
         </motion.div>
 
         {/* Two-column editorial layout */}

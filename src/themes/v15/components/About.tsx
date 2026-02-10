@@ -43,6 +43,23 @@ export default function About() {
           </span>
         </motion.div>
 
+        {/* Portrait */}
+        <motion.div
+          className="mb-12 md:mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.25 }}
+        >
+          <div className="w-40 h-48 md:w-48 md:h-56 mx-auto relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-blush/10 to-transparent blur-2xl rounded-full" />
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="relative w-full h-full object-cover object-top"
+            />
+          </div>
+        </motion.div>
+
         {/* Pull quote - first sentence in large display */}
         <motion.blockquote
           className="mb-12 md:mb-16"

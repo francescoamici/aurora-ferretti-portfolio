@@ -163,6 +163,22 @@ export default function About() {
           </h2>
         </motion.div>
 
+        {/* Portrait */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="mb-12 flex justify-center"
+        >
+          <div className="relative w-40 h-48 md:w-48 md:h-56 rounded-2xl overflow-hidden shadow-[0_4px_30px_rgba(122,155,109,0.1)]">
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+        </motion.div>
+
         {/* Bio Card */}
         <div className="relative">
           {/* Margin annotations */}

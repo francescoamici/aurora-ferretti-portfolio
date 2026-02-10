@@ -6,6 +6,8 @@ export interface Profile {
   location: string;
   email: string;
   website: string;
+  avatar: string;
+  portraitCutout: string;
   links: SocialLink[];
 }
 

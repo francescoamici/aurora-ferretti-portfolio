@@ -8,6 +8,9 @@ export const profile: Profile = {
   location: 'Roma, Italia',
   email: 'aurora@auroraferretti.com',
   website: 'auroraferretti.com',
+  avatar:
+    'https://media.licdn.com/dms/image/v2/C4D22AQGe8G2cRYSR-g/feedshare-shrink_800/feedshare-shrink_800/0/1662544816666?e=2147483647&v=beta&t=uwdQUVAR8p-tS3TPiAa7Ej_G95pMGm-E-BSv1XgFsUY',
+  portraitCutout: '/images/portrait.png',
   links: [
     {
       platform: 'linkedin',

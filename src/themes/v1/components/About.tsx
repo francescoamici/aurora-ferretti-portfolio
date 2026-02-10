@@ -53,6 +53,25 @@ export default function About() {
           {t('about', { ns: 'common', defaultValue: 'About' })}
         </motion.p>
 
+        {/* Portrait */}
+        <motion.div
+          className="mb-16 flex justify-center"
+          custom={0.5}
+          variants={textVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+        >
+          <div className="relative w-48 h-48 md:w-56 md:h-56">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/20 via-gold/10 to-transparent blur-2xl" />
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="relative w-full h-full object-cover object-top"
+            />
+          </div>
+        </motion.div>
+
         {/* Bio text */}
         <motion.blockquote
           className="font-accent text-2xl leading-relaxed font-light text-ivory/90 md:text-3xl lg:text-4xl"

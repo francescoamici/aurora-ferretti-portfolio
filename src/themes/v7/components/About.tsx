@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from '@auror/i18n';
+import { profile } from '@auror/data';
 
 export default function About() {
   const { t, i18n } = useTranslation('profile');
@@ -84,6 +85,15 @@ export default function About() {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="lg:col-span-3 hidden lg:flex flex-col items-end gap-6 pt-12"
           >
+            {/* Portrait */}
+            <div className="w-full relative" style={{ transform: 'rotate(-3deg)' }}>
+              <img
+                src={profile.portraitCutout}
+                alt={profile.name}
+                className="w-full h-auto object-cover"
+                style={{ filter: 'contrast(1.2) drop-shadow(4px 4px 0 rgba(255,0,0,0.15))' }}
+              />
+            </div>
             <div className="text-right" style={{ transform: 'rotate(-3deg)' }}>
               <span className="font-big font-700 text-6xl text-red/20">01</span>
             </div>

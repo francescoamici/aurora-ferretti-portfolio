@@ -22,6 +22,23 @@ export default function About() {
           <div className="flex-1 h-px bg-silver" />
         </motion.div>
 
+        {/* Portrait */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 1 }}
+          className="mb-16 flex justify-center"
+        >
+          <div className="w-36 h-44">
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="w-full h-full object-cover object-top grayscale"
+            />
+          </div>
+        </motion.div>
+
         {/* Extended bio in accent font */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

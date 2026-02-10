@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from '@auror/i18n';
+import { profile } from '@auror/data';
 
 export default function About() {
   const { t } = useTranslation('profile');
@@ -31,6 +32,18 @@ export default function About() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="mx-auto max-w-2xl text-center"
       >
+        {/* Portrait */}
+        <div className="mb-12 flex justify-center">
+          <div className="relative w-40 h-40">
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="w-full h-full object-cover object-top grayscale"
+            />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-red" />
+          </div>
+        </div>
+
         <p
           className="font-body text-lg leading-[2] text-black/70"
         >

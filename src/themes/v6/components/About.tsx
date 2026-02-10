@@ -60,6 +60,23 @@ export default function About() {
           </h2>
         </motion.div>
 
+        {/* Portrait */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mb-12 flex justify-center"
+        >
+          <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden shadow-[0_4px_40px_rgba(45,80,22,0.1)]">
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+        </motion.div>
+
         <div className="relative grid md:grid-cols-[1fr_auto] gap-12 md:gap-16 items-start">
           {/* Bio text */}
           <motion.div

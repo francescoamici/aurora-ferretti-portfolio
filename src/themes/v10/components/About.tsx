@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from '@auror/i18n';
+import { profile } from '@auror/data';
 
 export default function About() {
   const { t } = useTranslation('profile');
@@ -33,6 +34,25 @@ export default function About() {
         >
           About the Director
         </motion.p>
+
+        {/* Portrait */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 2, delay: 0.4 }}
+          className="flex justify-center mb-16"
+        >
+          <div className="relative w-40 h-52">
+            <div className="absolute inset-0 spotlight rounded-sm" />
+            <img
+              src={profile.portraitCutout}
+              alt={profile.name}
+              className="relative w-full h-full object-cover object-top"
+              style={{ filter: 'sepia(0.2) contrast(1.1)' }}
+            />
+          </div>
+        </motion.div>
 
         {/* Bio text with drop cap */}
         <motion.div
